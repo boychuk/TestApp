@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GithubApp</string>
+    <string name="enter_a_github_user_id">Enter a github user id</string>
+    <string name="search">Search</string>
+    <string name="avatar">Avatar</string>
+    <string name="ok">Ok</string>
+    <string name="last_updated_s">Last updated: %s</string>
+    <string name="stars_d">Stars: %d</string>
+    <string name="forks_d">Forks: %d</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="search_title">Take Home</string>
+</resources>

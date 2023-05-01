@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.githubapp.ui.search.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/actionSearchToRepoDetails"
+            app:destination="@id/repoDetailsFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/repoDetailsFragment"
+        android:name="com.example.githubapp.ui.details.RepoDetailsFragment"
+        android:label="RepoDetailsFragment">
+
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="lastUpdated"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="starsCount"
+            app:argType="integer" />
+        <argument
+            android:name="forkCount"
+            app:argType="integer" />
+    </dialog>
+</navigation>
